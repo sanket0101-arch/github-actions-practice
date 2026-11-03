@@ -17,6 +17,5 @@ jobs:
         uses: actions/checkout@v4
 
       - name: printing name
-        runs: echo "this is demo text"
+        run: echo "this is demo text"
 
-        
