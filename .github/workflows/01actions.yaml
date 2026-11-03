@@ -1,0 +1,22 @@
+name: github actions 01 workflow
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+
+  workflow_discpatch:
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checking out repository
+        uses: actions/checkout@v4
+
+      - name: printing name
+        runs: echo "this is demo text"
+
+        
